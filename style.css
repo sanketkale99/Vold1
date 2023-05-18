@@ -1,0 +1,152 @@
+
+  /* Navbar styles */
+  .navbar {
+    background-color: #dc8787;
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  
+  /* Home section styles */
+  #home {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Services section styles */
+  #services {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Feedback section styles */
+  #feedback {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  #feedback h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    padding: 1rem 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767.98px) {
+    #home h1 {
+      font-size: 2.5rem;
+    }
+  
+    #services h2,
+    #contact h2,
+    #feedback h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* ... previous CSS styles ... */
+
+/* Feedback card styles */
+#feedbacks {
+    margin-top: 2rem;
+  }
+  
+  .card-deck {
+    margin-top: 1rem;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-body {
+    
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+  
+  .card-body:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+
+
+  /* style for images home  */
+  /* CSS Styles */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Adjust this value based on the aspect ratio of your image */
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  animation: fadeInImage 1s ease-in-out forwards;
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
