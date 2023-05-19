@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energy Drink Advertising</title>
+  <title>Vold Energy Drink</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.js">
 
   <style>
     body {
-      background-color: #de3f3f;
-      
+      background-color: #ead8d8;
+
     }
 
     /* Additional styles specific to your website */
@@ -22,7 +23,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Energy Drink</a>
+      <a class="navbar-brand" href="#">VOLD</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +47,7 @@
   <!-- Home Section -->
   <section id="home" class="py-5">
     <div class="container">
-      <h2>Welcome to Energy Drink Advertising</h2>
+      <h2>Welcome to <b>Vold</b> Energy Drink <b>Product of Asia</b></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in urna ullamcorper, tristique urna ut, luctus mi.
         Aenean posuere pharetra tortor, sed ullamcorper sem posuere a.</p>
       <img src="images/images.jpeg" alt="Energy Drink" class="img-fluid">
@@ -59,34 +60,6 @@
       <h2>Our Services</h2>
       <p>Explore what we offer:</p>
       <!-- Add your services content here -->
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div id="contact-form">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" required>
-          </div>
-          <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" required>
-          </div>
-          <div class="form-group">
-            <label for="pincode">Pincode</label>
-            <input type="text" class="form-control" id="pincode" required>
-          </div>
-          <div class="form-group">
-            <label for="feedback">Feedback</label>
-            <textarea class="form-control" id="feedback" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
     </div>
   </section>
 
@@ -121,13 +94,81 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-4 bg-dark">
-    <div class="container text-center">
-      <p>&copy; 2023 Energy Drink Advertising. All rights reserved.</p>
+  <!-- contact section  -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <form id="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="city" placeholder="Your City" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">map goes here </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Categories</h3>
+          <ul>
+
+            <li>Customer Service</li>
+            <li>Sales</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Privacy</li>
+            <li>Terms and Conditions</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Additional Information</h3>
+          <ul>
+            <li><i class="fa fa-phone"></i> Phone: +91 8530085816</li>
+            <li><i class="fa fa-envelope"></i> Email: voldenergy@gmail.com</li>
+            <li><i class="fa fa-map-marker"></i> Address: Nighoj, City: Ahmednagar, 414306</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="support-center">
+            <b>Follow us on</b>
+            <div class="app-images">
+              <img src="#" alt="Instagram Logo">
+              <img src="#" alt="Twitter Logo">
+              <img src="#" alt="Facebook Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-bottom">
+            <img src="learnvern-logo.png" alt="Vold Logo">
+            <p>&copy; 2023 VoldEnergy, All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
