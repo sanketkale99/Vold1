@@ -108,7 +108,7 @@ footer {
   font-size: 1rem;
 }
 
-img{
+img {
   width: auto;
   height: 10%;
 }
@@ -315,6 +315,14 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.app-images img {
+  width: 40px;
+  /* Adjust the width as per your preference */
+  height: 40px;
+  /* Adjust the height as per your preference */
+  margin: 0 10px;
 }
 
 .app-images img {
